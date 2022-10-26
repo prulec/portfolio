@@ -1,0 +1,20 @@
+export const TECHS = [
+    { name: "Angular", filename: "Angular.svg" },
+    { name: "Bootstrap", filename: "Bootstrap.svg" },
+    { name: "Chai", filename: "Chai.svg" },
+    { name: "CSS3", filename: "CSS3.svg" },
+    { name: "D3", filename: "D3.svg" },
+    { name: "Docker", filename: "Docker.svg" },
+    { name: "Express", filename: "Express.svg" },
+    { name: "HTML5", filename: "HTML5.svg" },
+    { name: "Java", filename: "Java.svg" },
+    { name: "Javascript", filename: "Javascript.svg" },
+    { name: "MongoDB", filename: "MongoDB.svg" },
+    { name: "MySQL", filename: "MySQL.svg" },
+    { name: "Nodejs", filename: "Nodejs.svg" },
+    { name: "Python", filename: "Python.svg" },
+    { name: "React", filename: "React.svg" },
+    { name: "Sass", filename: "Sass.svg" },
+    { name: "SpringBoot", filename: "SpringBoot.svg" },
+    { name: "TypeScript", filename: "TypeScript.svg" }
+]

@@ -1,13 +1,11 @@
 import React from "react";
 
-import Project from "./Project";
+import ProjectThumb from "./ProjectThumb";
 
-export default function Projects() {
+export default function Projects(props) {
   return <div className="projects">
-    <h2>Projects</h2>
-    <Project/>
-    <Project/>
-    <Project/>
-    <Project/>
+    {props.projects.map(project => (
+      <ProjectThumb thumbnail={project.images[0]}/>
+    ))}
   </div>;
 }

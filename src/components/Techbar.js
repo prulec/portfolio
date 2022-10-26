@@ -2,12 +2,11 @@ import React from "react";
 
 import Tech from "./Tech";
 
-export default function Techbar() {
+export default function Techbar(props) {
   return <div className="techbar">
-    <h2>Techbar</h2>
-    <Tech/>
-    <Tech/>
-    <Tech/>
-    <Tech/>
+    {props.techs.map(tech => (
+      <Tech tech={tech}/>
+    ))}
+    <Tech tech={{ name: "Add", filename: "add.svg" }}/>
   </div>;
 }
