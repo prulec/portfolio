@@ -1,5 +1,6 @@
 import React from "react";
 
+import './Techbar.css'
 import Tech from "./Tech";
 
 export default function Techbar(props) {

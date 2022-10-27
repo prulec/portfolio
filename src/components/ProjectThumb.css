@@ -1,0 +1,16 @@
+.projectThumb {
+    position: relative;
+    width: 16rem;
+    height: 12rem;
+    flex: 1 0 auto;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectThumb--img {
+    flex: 1 1 auto;
+    object-fit: cover;
+}
