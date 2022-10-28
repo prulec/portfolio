@@ -1,9 +1,16 @@
 .projects {
     padding: 2rem 1rem 2rem 0.5rem;
     flex: 1 0 0;
+    max-width: 35%;
     max-height: 100%;
     overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     gap: 1rem;
+}
+
+.projects--blank {
+    width: 14rem;
+    flex: 1 1 auto;
 }

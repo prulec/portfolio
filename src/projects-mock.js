@@ -40,5 +40,5 @@ export const PROJECTS = [
       "https://github.com/prulec/portfolio/raw/main/images/Archive/techdoc2.png",
       "https://github.com/prulec/portfolio/raw/main/images/Archive/techdoc3.png",
     ],
-  },
+  }
 ];

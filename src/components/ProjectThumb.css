@@ -1,16 +1,17 @@
 .projectThumb {
     position: relative;
-    width: 16rem;
-    height: 12rem;
-    flex: 1 0 auto;
+    width: 14rem;
+    aspect-ratio: 16 / 9;
+    flex: 1 1 auto;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
-.projectThumb--img {
+.projectThumb > img {
     flex: 1 1 auto;
     object-fit: cover;
 }

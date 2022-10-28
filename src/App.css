@@ -1,9 +1,8 @@
 .container {
     width: 100%;
     min-width: 20rem;
-    max-width: 60rem;
     max-height: 100vh;
     overflow: hidden;
-    margin: auto;
     display: flex;
+    background-color: #d4d4d4;
 }
