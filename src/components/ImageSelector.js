@@ -4,12 +4,16 @@ import "./ImageSelector.css";
 
 export default function ImageSelector(props) {
   return (
-    <div>
+    <div className="imageSelector">
       {props.images.map((image, idx) =>
-        idx + 1 === props.selected ? (
-          <div className="selectedBullet"></div>
+        idx === props.selected ? (
+          <div className="selectedBullet">
+            <div></div>
+          </div>
         ) : (
-          <div className="bullet"></div>
+          <div className="noSelectedBullet">
+            <div></div>
+          </div>
         )
       )}
     </div>
