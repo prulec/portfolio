@@ -14,7 +14,7 @@ export default function App() {
     <div className="container">
       <Techbar techs={TECHS} />
       <Projects projects={PROJECTS} />
-      <Display show={CONSTANTS.ABOUT} project={PROJECTS[3]} />
+      <Display show={CONSTANTS.CONTACT} project={PROJECTS[3]} />
       <Navbar />
     </div>
   );

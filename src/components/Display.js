@@ -5,6 +5,7 @@ import { CONSTANTS } from "../CONSTANTS";
 import Start from "./Start";
 import Project from "./Project";
 import About from "./About";
+import Contact from "./Contact";
 
 export default function Display(props) {
   switch (props.show) {
@@ -15,7 +16,7 @@ export default function Display(props) {
     case CONSTANTS.ABOUT:
       return <About />;
     case CONSTANTS.CONTACT:
-      return <div className="display"></div>;
+      return <Contact />;
     case CONSTANTS.THANKS:
       return <div className="display"></div>;
     default:
