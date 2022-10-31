@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import { CONSTANTS } from "./Constants";
+import { CONSTANTS } from "./CONSTANTS";
 import { TECHS } from "./TECHS";
 import { PROJECTS } from "./PROJECTS";
 import Techbar from "./components/Techbar";
@@ -14,7 +14,7 @@ export default function App() {
     <div className="container">
       <Techbar techs={TECHS} />
       <Projects projects={PROJECTS} />
-      <Display show={CONSTANTS.PROJECT} project={PROJECTS[3]} />
+      <Display show={CONSTANTS.ABOUT} project={PROJECTS[3]} />
       <Navbar />
     </div>
   );

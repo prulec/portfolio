@@ -1,0 +1,12 @@
+.aboutImage {
+    position: relative;
+    text-align: center;
+    background-color: #2196F3;
+}
+
+.aboutImage>img {
+    display: block;
+    margin: auto;
+    max-height: 50vh;
+    max-width: 100%;
+}

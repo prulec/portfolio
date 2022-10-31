@@ -1,27 +1,23 @@
 import React from "react";
 
 import "./Display.css";
-import { CONSTANTS } from "../Constants";
-import Gallery from "./Gallery";
-import ProjectInfo from "./ProjectInfo";
+import { CONSTANTS } from "../CONSTANTS";
+import Start from "./Start";
+import Project from "./Project";
+import About from "./About";
 
 export default function Display(props) {
   switch (props.show) {
     case CONSTANTS.START:
-      return (
-        <div className="display">
-          <div className="display--backImage">
-            <img src={"assets/png/astronaut.png"} alt="background" />
-          </div>
-        </div>
-      );
+      return <Start />;
     case CONSTANTS.PROJECT:
-      return (
-        <div className="display">
-          <Gallery images={props.project.images} />
-          <ProjectInfo project={props.project}/>
-        </div>
-      );
+      return <Project project={props.project} />;
+    case CONSTANTS.ABOUT:
+      return <About />;
+    case CONSTANTS.CONTACT:
+      return <div className="display"></div>;
+    case CONSTANTS.THANKS:
+      return <div className="display"></div>;
     default:
       return;
   }

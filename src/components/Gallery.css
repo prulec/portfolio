@@ -1,9 +1,0 @@
-.gallery {
-    position: relative;
-    flex: 1 1 auto;
-}
-
-.gallery>img {
-    max-height: 100%;
-    max-width: 100%;
-}

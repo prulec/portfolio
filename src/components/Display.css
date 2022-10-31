@@ -3,28 +3,6 @@
     flex: 1 1 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    height: 100%;
     background-color: #8B8B8B;
-}
-
-/* START PAGE */
-.display--backImage {
-    position: absolute;
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-    padding-left: 50%;
-    padding-top: 50vh;
-}
-
-.display--backImage>img {
-    height: 100vh;
-    transform: translate(-50%, -50%);
-}
-
-/* MEDIA QUERIES */
-@media (min-aspect-ratio: 3 / 1) {
-    .display--backImage>img {
-        height: auto;
-        width: 102%;
-    }
 }

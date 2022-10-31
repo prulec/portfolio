@@ -1,0 +1,9 @@
+.projectGallery {
+    position: relative;
+    text-align: center;
+}
+
+.projectGallery>img {
+    max-height: 100vh;
+    max-width: 100%;
+}

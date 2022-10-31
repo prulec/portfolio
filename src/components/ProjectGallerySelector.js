@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./ImageSelector.css";
+import "./ProjectGallerySelector.css";
 
-export default function ImageSelector(props) {
+export default function ProjectGallerySelector(props) {
   return (
-    <div className="imageSelector">
+    <div className="projectGallerySelector">
       {props.images.map((image, idx) =>
         idx === props.selected ? (
           <div className="selectedBullet">

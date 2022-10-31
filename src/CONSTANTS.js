@@ -1,5 +1,7 @@
 export const CONSTANTS = {
     START: "START",
     PROJECT: "PROJECT",
-    ABOUT: "ABOUT"
+    ABOUT: "ABOUT",
+    CONTACT: "CONTACT",
+    THANKS: "THANKS"
 }
