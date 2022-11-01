@@ -11,7 +11,15 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
-.projectThumb > img {
+.projectThumb>img {
     flex: 1 1 auto;
     object-fit: cover;
+}
+
+.select {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.75));
+}
+
+.deselect {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.75)) grayscale(1) blur(4px);
 }

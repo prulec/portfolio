@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ProjectThumb.css";
 import ProjectOverlay from "./ProjectOverlay";
 
 export default function ProjectThumb(props) {
+  const [isHover, setIsHover] = useState(false);
+
+  const doHover = () => setIsHover(true)
+  const undoHover = () => setIsHover(false)
+
   return (
-    <div className="projectThumb">
+    <div
+      className={"projectThumb" + (props.isSelected ? " select" : " deselect")}
+      onMouseOver={doHover}
+    >
       <img src={props.project.images[0]} alt={props.project.images[0]} />
-      <ProjectOverlay project={props.project} />
+      {isHover && (
+        <ProjectOverlay project={props.project} undoHover={undoHover} />
+      )}
     </div>
   );
 }
