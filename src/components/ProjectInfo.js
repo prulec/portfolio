@@ -21,7 +21,7 @@ export default function ProjectInfo(props) {
       </div>
       <div className="projectInfo--techs">
         {techs.map((tech) => (
-          <Tech tech={tech} />
+          <Tech tech={tech} isSelected={true}/>
         ))}
       </div>
       <p className="projectInfo--description">{props.project.description}</p>

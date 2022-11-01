@@ -4,12 +4,13 @@ import "./ProjectOverlay.css";
 
 export default function ProjectOverlay(props) {
   return (
-    <div
-      className="projectOverlay"
-      onMouseOut={props.undoHover}
-    >
+    <div className="projectOverlay" onMouseOut={props.undoHover}>
       <h2>{props.project.name}</h2>
-      <img src="assets/svg/log-in-circle.svg" alt="login-icon" />
+      <img
+        src="assets/svg/log-in-circle.svg"
+        alt="login-icon"
+        onClick={(event) => props.display(event, props.project.name)}
+      />
     </div>
   );
 }

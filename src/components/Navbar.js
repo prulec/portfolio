@@ -2,18 +2,31 @@ import React from "react";
 import { CloseRounded, KeyboardDoubleArrowUp } from "@mui/icons-material";
 
 import "./Navbar.css";
+import { CONSTANTS } from "../CONSTANTS";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div className="navbar">
-      <div className="navbar--extra">
-        <span>cv</span>
-        <span>contact</span>
-      </div>
+      {[CONSTANTS.ABOUT, CONSTANTS.CONTACT].includes(props.display) && (
+        <div className="navbar--extra">
+          <span>cv</span>
+          <span onClick={(event) => props.open(event, CONSTANTS.CONTACT)}>
+            contact
+          </span>
+        </div>
+      )}
       <div className="navbar--main">
-        <CloseRounded className="closeButton" />
-        <KeyboardDoubleArrowUp className="arrow" />
-        <span>prulec</span>
+        <CloseRounded
+          className="closeButton"
+          onClick={(event) => props.open(event, CONSTANTS.START)}
+        />
+        <KeyboardDoubleArrowUp
+          className="arrow"
+          onClick={(event) => props.open(event, CONSTANTS.ABOUT)}
+        />
+        <span onClick={(event) => props.open(event, CONSTANTS.ABOUT)}>
+          prulec
+        </span>
       </div>
     </div>
   );

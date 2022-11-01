@@ -11,7 +11,7 @@ import { MailOutline } from "@mui/icons-material";
 
 import "./ContactForm.css";
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   return (
     <Box component="form">
       <FormControl variant="filled">
@@ -35,6 +35,7 @@ export default function ContactForm() {
           variant="contained"
           disableElevation
           startIcon={<MailOutline />}
+          onClick={() => props.toThank()}
         >
           Send
         </Button>

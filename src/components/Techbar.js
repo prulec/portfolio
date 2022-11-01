@@ -10,10 +10,10 @@ export default function Techbar(props) {
         <Tech
           tech={tech}
           isSelected={props.filter.includes(tech.name)}
-          select={(e) => props.select(e,tech.name)}
+          select={event => props.select(event,tech.name)}
         />
       ))}
-      <Tech tech={{ name: "Add", filename: "add.svg" }} />
+      {/* <Tech tech={{ name: "Add", filename: "add.svg" }} /> */}
     </div>
   );
 }
