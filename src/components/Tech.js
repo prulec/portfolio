@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Tech.css"
+
 export default function Tech(props) {
   return (
     <div className="tech">

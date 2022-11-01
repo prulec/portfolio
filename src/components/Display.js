@@ -17,8 +17,6 @@ export default function Display(props) {
       return <About />;
     case CONSTANTS.CONTACT:
       return <Contact />;
-    case CONSTANTS.THANKS:
-      return <div className="display"></div>;
     default:
       return;
   }

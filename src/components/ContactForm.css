@@ -1,0 +1,41 @@
+/* Box */
+.MuiBox-root {
+    display: flex;
+    width: 30rem;
+    max-width: 90%;
+    margin: 3rem auto;
+}
+.MuiBox-root ::after {
+    border-bottom-color: #6750A4 !important;
+}
+
+/* FormControl */
+.MuiFormControl-root {
+    width: 100%;
+    row-gap: 1rem;
+}
+
+/* Input & TextField */
+label {
+    color: #6750A4 !important;
+}
+.MuiBox-root .MuiFilledInput-root {
+    background-color: #EAEAEA;
+    max-width: 100% !important;
+}
+.MuiBox-root .MuiFilledInput-root:hover {
+    background-color: #EAEAEA;
+}
+.MuiBox-root .MuiFilledInput-root.Mui-focused {
+    background-color: #EAEAEA;
+}
+
+/* Button */
+.MuiBox-root .MuiButton-root {
+    background-color: #6750A4;
+    border-radius: 1.5rem;
+    height: 3rem;
+}
+.MuiBox-root .MuiButton-root:hover {
+    background-color: #6750A4;
+}

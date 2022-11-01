@@ -1,0 +1,20 @@
+.thanks {
+    background-color: #EAEAEA;
+    color: #625B71;
+    display: block;
+    width: fit-content;
+    max-width: 90%;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.thanks .mailSentIcon {
+    font-size: 2rem !important;
+}
+
+.thanks h1, .thanks h2 {
+    font-weight: 400;
+}
