@@ -7,7 +7,7 @@ import ProjectInfo from "./ProjectInfo";
 export default function Project(props) {
   return (
     <div className="display">
-      <ProjectGallery images={props.project.images} />
+      <ProjectGallery project={props.project} />
       <ProjectInfo project={props.project} />
     </div>
   );

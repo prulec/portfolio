@@ -11,7 +11,10 @@ export default function ProjectGallerySelector(props) {
             <div></div>
           </div>
         ) : (
-          <div className="noSelectedBullet">
+          <div
+            className="noSelectedBullet"
+            onClick={(e) => props.select(e, idx)}
+          >
             <div></div>
           </div>
         )
