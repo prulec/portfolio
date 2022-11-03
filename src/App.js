@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 import "./App.css";
 import { CONSTANTS } from "./CONSTANTS";
-import { TECHS } from "./TECHS";
-import { PROJECTS } from "./PROJECTS";
+import { TECHS } from "./data/TECHS";
+import { PROJECTS } from "./data/PROJECTS";
+import { ABOUT } from "./data/ABOUT";
 import Techbar from "./components/Techbar";
 import Projects from "./components/Projects";
 import Display from "./components/Display";
@@ -63,8 +64,8 @@ export default function App() {
   };
 
   const displayFromNavbar = (event, sectionName) => {
-    setDisplay(sectionName)
-  }
+    setDisplay(sectionName);
+  };
 
   return (
     <div className="container">
@@ -75,7 +76,12 @@ export default function App() {
         select={selectProject}
         display={displayProject}
       />
-      <Display show={display} project={projectDisplayed} />
+      <Display
+        show={display}
+        project={projectDisplayed}
+        about={ABOUT}
+        techs={TECHS}
+      />
       <Navbar display={display} open={displayFromNavbar} />
     </div>
   );

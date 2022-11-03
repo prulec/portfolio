@@ -3,13 +3,12 @@ import React from "react";
 import './Display.css';
 import AboutImage from "./AboutImage";
 import AboutInfo from "./AboutInfo";
-import { ABOUT } from "../ABOUT";
 
-export default function About() {
+export default function About(props) {
     return (
         <div className="display">
-            <AboutImage image={ABOUT.image} />
-            <AboutInfo about={ABOUT} />
+            <AboutImage image={props.about.image} />
+            <AboutInfo about={props.about} />
         </div>
     )
 }

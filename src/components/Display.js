@@ -12,9 +12,9 @@ export default function Display(props) {
     case CONSTANTS.START:
       return <Start />;
     case CONSTANTS.PROJECT:
-      return <Project project={props.project} />;
+      return <Project project={props.project} techs={props.techs}/>;
     case CONSTANTS.ABOUT:
-      return <About />;
+      return <About about={props.about}/>;
     case CONSTANTS.CONTACT:
       return <Contact />;
     default:

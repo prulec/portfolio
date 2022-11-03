@@ -1,11 +1,10 @@
 import React from "react";
 
-import { TECHS } from "../TECHS";
 import "./ProjectInfo.css";
 import Tech from "./Tech";
 
 export default function ProjectInfo(props) {
-  let techs = TECHS.filter((tech) => props.project.techs.includes(tech.name));
+  const techs = props.techs.filter((tech) => props.project.techs.includes(tech.name));
   console.log(techs);
   return (
     <div className="projectInfo">
