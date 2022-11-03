@@ -6,7 +6,9 @@ import { CONSTANTS } from "../CONSTANTS";
 
 export default function Navbar(props) {
   return (
-    <div className="navbar">
+    <div
+      className={"navbar" + (props.display === CONSTANTS.START ? " start" : "")}
+    >
       {[CONSTANTS.ABOUT, CONSTANTS.CONTACT].includes(props.display) && (
         <div className="navbar--extra">
           <span>cv</span>
@@ -16,10 +18,12 @@ export default function Navbar(props) {
         </div>
       )}
       <div className="navbar--main">
-        <CloseRounded
-          className="closeButton"
-          onClick={(event) => props.open(event, CONSTANTS.START)}
-        />
+        {props.display !== CONSTANTS.START && (
+          <CloseRounded
+            className="closeButton"
+            onClick={(event) => props.open(event, CONSTANTS.START)}
+          />
+        )}
         <KeyboardDoubleArrowUp
           className="arrow"
           onClick={(event) => props.open(event, CONSTANTS.ABOUT)}
