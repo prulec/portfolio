@@ -8,7 +8,7 @@ export default function Project(props) {
   return (
     <div className="display">
       <ProjectGallery project={props.project} />
-      <ProjectInfo project={props.project} />
+      <ProjectInfo project={props.project} techs={props.techs} />
     </div>
   );
 }

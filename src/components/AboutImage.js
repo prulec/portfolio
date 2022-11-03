@@ -5,7 +5,7 @@ import "./AboutImage.css";
 export default function AboutPhoto(props) {
   return (
     <div className="aboutImage">
-      <img src={"assets/png/profile_image_dolltoon.png"} alt="Profile image" />
+      <img src={"assets/png/profile_image_dolltoon.png"} alt="Profile_image" />
     </div>
   );
 }
