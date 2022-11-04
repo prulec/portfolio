@@ -42,19 +42,13 @@ export default function ContactForm(props) {
         <InputLabel htmlFor="component-filled">E-mail</InputLabel>
         <FilledInput
           id="component-filled"
-          autoFocus
           name="reply_to"
-          // value={name}
-          // onChange={handleChange}
         />
         <TextField
           id="filled-multiline-flexible"
           label="Message"
           multiline
           name="message"
-          // maxRows={4}
-          // value={value}
-          // onChange={handleChange}
           variant="filled"
         />
         <Button

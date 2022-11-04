@@ -8,7 +8,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
 .projectThumb>img {

@@ -9,6 +9,7 @@ import Techbar from "./components/Techbar";
 import Projects from "./components/Projects";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
+import { useMediaQuery } from "@mui/material";
 
 const getNames = (array) => {
   return array.map((i) => i.name);
@@ -21,6 +22,7 @@ export default function App() {
   const [projectSelected, setProjectSelected] = useState();
   const [projectDisplayed, setProjectDisplayed] = useState();
   const [display, setDisplay] = useState(CONSTANTS.START);
+  const showFullPage = useMediaQuery('(min-width: 750px)')
 
   const selectTech = (event, techName) => {
     if (techName !== techSelected) {
@@ -69,19 +71,25 @@ export default function App() {
 
   return (
     <div className="container">
-      <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
-      <Projects
+      {(showFullPage || display===CONSTANTS.START) &&
+        <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
+      }
+      {(showFullPage || display===CONSTANTS.START) &&
+        <Projects
         projects={PROJECTS}
         filter={projectsFilter}
         select={selectProject}
         display={displayProject}
       />
-      <Display
+      }
+      {(showFullPage || display!==CONSTANTS.START) &&
+        <Display
         show={display}
         project={projectDisplayed}
         about={ABOUT}
         techs={TECHS}
       />
+      }
       <Navbar display={display} open={displayFromNavbar} about={ABOUT} />
     </div>
   );
