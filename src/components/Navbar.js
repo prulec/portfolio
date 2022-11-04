@@ -11,7 +11,9 @@ export default function Navbar(props) {
     >
       {[CONSTANTS.ABOUT, CONSTANTS.CONTACT].includes(props.display) && (
         <div className="navbar--extra">
-          <span>cv</span>
+          <a href={props.about.cv} target="_blank" rel="noreferrer">
+            <span>cv</span>
+          </a>
           <span onClick={(event) => props.open(event, CONSTANTS.CONTACT)}>
             contact
           </span>

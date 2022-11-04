@@ -9,7 +9,10 @@ export default function ProjectOverlay(props) {
       <img
         src="assets/svg/log-in-circle.svg"
         alt="login-icon"
-        onClick={(event) => props.display(event, props.project.name)}
+        onClick={(event) => {
+          event.stopPropagation()
+          props.display(event, props.project.name)
+        }}
       />
     </div>
   );

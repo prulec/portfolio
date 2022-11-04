@@ -82,7 +82,7 @@ export default function App() {
         about={ABOUT}
         techs={TECHS}
       />
-      <Navbar display={display} open={displayFromNavbar} />
+      <Navbar display={display} open={displayFromNavbar} about={ABOUT} />
     </div>
   );
 }

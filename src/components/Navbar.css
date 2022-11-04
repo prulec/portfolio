@@ -35,8 +35,10 @@
     column-gap: 2rem;
 }
 
-.navbar--extra>span, .navbar--main>span {
+.navbar--extra>a, .navbar--extra>span, .navbar--main>span {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .closeButton, .arrow {
