@@ -5,7 +5,6 @@ import Tech from "./Tech";
 
 export default function ProjectInfo(props) {
   const techs = props.techs.filter((tech) => props.project.techs.includes(tech.name));
-  console.log(techs);
   return (
     <div className="projectInfo">
       <div className="projectInfo--header">
