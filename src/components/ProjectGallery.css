@@ -6,4 +6,5 @@
 .projectGallery>img {
     max-height: 100vh;
     max-width: 100%;
+    border-bottom: 2px solid #FF6F6F;
 }
