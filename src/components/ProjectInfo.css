@@ -46,4 +46,5 @@
 .projectInfo--description {
     padding-bottom: 3rem;
     font-weight: 600;
+    white-space: pre-wrap;
 }

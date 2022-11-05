@@ -10,11 +10,13 @@ export default function Projects(props) {
         <ProjectThumb
           project={project}
           isSelected={props.filter.includes(project.name)}
-          select={event => props.select(event, project.name)}
+          select={(event) => props.select(event, project.name)}
           display={props.display}
         />
       ))}
-      {props.projects.length % 2 !== 0 && <div className="projects--blank" />}
+      {props.projects.length % 2 !== 0 && (
+        <div className="projects--blank" style={{ order: 10000 }} />
+      )}
     </div>
   );
 }

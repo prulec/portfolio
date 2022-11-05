@@ -38,4 +38,5 @@
     padding-top: 0.5rem;
     padding-bottom: 3rem;
     font-weight: 600;
+    white-space: pre-wrap;
 }

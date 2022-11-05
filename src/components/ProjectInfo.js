@@ -15,9 +15,11 @@ export default function ProjectInfo(props) {
             <a href={props.project.url} target="_blank" rel="noreferrer">
               <img src={"assets/svg/OpenInNew.svg"} alt="Link" />
             </a>
+            {props.project.repo &&
             <a href={props.project.repo} target="_blank" rel="noreferrer">
               <img src={"assets/svg/Github.svg"} alt="Repo" />
             </a>
+            }
           </div>
         </div>
       </div>
