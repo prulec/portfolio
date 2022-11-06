@@ -217,8 +217,8 @@ export const PROJECTS = [
       "assets/screenshots/BarChart.png",
     ],
     date: "2022",
-    url: "https://replit.com/@prulec/d3-barchart#index.html",
-    code: "",
+    url: "https://d3-barchart.prulec.repl.co/",
+    code: "https://replit.com/@prulec/d3-barchart#script.js",
     description:
       'Bar Chart Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -230,8 +230,8 @@ export const PROJECTS = [
       "assets/screenshots/ScatterPlot.png",
     ],
     date: "2022",
-    url: "https://replit.com/@prulec/d3-scatterplot#index.html",
-    code: "",
+    url: "https://d3-scatterplot.prulec.repl.co/",
+    code: "https://replit.com/@prulec/d3-scatterplot#script.js",
     description:
       'Scatterplot Graph challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -243,8 +243,8 @@ export const PROJECTS = [
       "assets/screenshots/HeatMap.png",
     ],
     date: "2022",
-    url: "https://replit.com/@prulec/d3-heatmap#index.html",
-    code: "",
+    url: "https://d3-heatmap.prulec.repl.co/",
+    code: "https://replit.com/@prulec/d3-heatmap#script.js",
     description:
       'Heat Map Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -256,8 +256,8 @@ export const PROJECTS = [
       "assets/screenshots/ChoroplethMap.png",
     ],
     date: "2022",
-    url: "https://replit.com/@prulec/d3-choroplethmap#index.html",
-    code: "",
+    url: "https://d3-choroplethmap.prulec.repl.co/",
+    code: "https://replit.com/@prulec/d3-choroplethmap#script.js",
     description:
       'Choropleth Map Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -270,7 +270,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://d3-treemap.prulec.repl.co/",
-    code: "https://replit.com/@prulec/d3-treemap#index.html",
+    code: "https://replit.com/@prulec/d3-treemap#script.js",
     description:
       'Treemap Diagram Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -286,7 +286,7 @@ export const PROJECTS = [
     code: "https://replit.com/@prulec/boilerplate-project-timestamp#index.js",
     description:
       'Timestamp Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
-    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs"],
   },
   {
     position: 21,
@@ -299,7 +299,7 @@ export const PROJECTS = [
     code: "https://replit.com/@prulec/boilerplate-project-headerparser#index.js",
     description:
       'Request Header Parser Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
-    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs"],
   },
   {
     position: 22,
@@ -312,7 +312,7 @@ export const PROJECTS = [
     code: "https://replit.com/@prulec/boilerplate-project-urlshortener#index.js",
     description:
       'URL Shortener Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
-    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs"],
   },
   {
     position: 23,
@@ -325,7 +325,7 @@ export const PROJECTS = [
     code: "https://replit.com/@prulec/boilerplate-project-exercisetracker#index.js",
     description:
       'Exercise Tracker Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
-    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs"],
   },
   {
     position: 24,
@@ -338,6 +338,73 @@ export const PROJECTS = [
     code: "https://replit.com/@prulec/boilerplate-project-filemetadata#index.js",
     description:
       'File Metadata Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
-    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs"],
+  },
+  {
+    position: 25,
+    name: "Metric-Imperial Converter API",
+    images: [
+      "assets/screenshots/MetricImperialConverter.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-metricimpconverter.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-metricimpconverter#tests/1_unit-tests.js",
+    description:
+      'Metric-Imperial Converter API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Unit and Functional Tests.',
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai"],
+  },
+  {
+    position: 26,
+    name: "Issue Tracker API",
+    images: [
+      "assets/screenshots/IssueTracker1.png",
+      "assets/screenshots/IssueTracker2.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-issuetracker.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-issuetracker#tests/2_functional-tests.js",
+    description:
+      'Issue Tracker API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Functional Tests.',
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai", "MongoDB"],
+  },
+  {
+    position: 27,
+    name: "Personal Library API",
+    images: [
+      "assets/screenshots/PersonalLibrary1.png",
+      "assets/screenshots/PersonalLibrary2.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-library.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-library#tests/2_functional-tests.js",
+    description:
+      'Personal Library API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Functional Tests.',
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai", "MongoDB"],
+  },
+  {
+    position: 28,
+    name: "Sudoku Solver API",
+    images: [
+      "assets/screenshots/SudokuSolver.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-sudoku-solver.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-sudoku-solver#tests/1_unit-tests.js",
+    description:
+      'Sudoku Solver API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Unit and Functional Tests.',
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai"],
+  },
+  {
+    position: 29,
+    name: "American-British English Translator API",
+    images: [
+      "assets/screenshots/AmericanBritishEnglishTranslator.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-american-british-english-translator.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-american-british-english-translator#tests/1_unit-tests.js",
+    description:
+      'American-British English Translator API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Unit and Functional Tests.',
+    techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai"],
   },
 ];
