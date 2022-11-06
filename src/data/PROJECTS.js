@@ -9,7 +9,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://codepen.io/prulec/full/RwVMZpE",
-    repo: "",
+    code: "",
     description:
       'Survey Form Page challenge for freeCodeCamp\'s course "Responsive Web Design".',
     techs: ["HTML5", "CSS3"],
@@ -24,7 +24,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://codepen.io/prulec/full/ExmmJog",
-    repo: "",
+    code: "",
     description:
       'Tribute Page challenge for freeCodeCamp\'s course "Responsive Web Design".',
     techs: ["HTML5", "CSS3"],
@@ -39,7 +39,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://codepen.io/prulec/full/QWgwjJE",
-    repo: "",
+    code: "",
     description:
       'Technical Documentation Page challenge for freeCodeCamp\'s course "Responsive Web Design".',
     techs: ["HTML5", "CSS3"],
@@ -56,7 +56,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://codepen.io/prulec/full/rNmqOQr",
-    repo: "",
+    code: "",
     description:
       'Static Product Landing Page challenge for freeCodeCamp\'s course "Responsive Web Design".',
     techs: ["HTML5", "CSS3"],
@@ -71,7 +71,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://codepen.io/prulec/full/LYLpQOP",
-    repo: "",
+    code: "",
     description:
       'Static Portfolio Page challenge for freeCodeCamp\'s course "Responsive Web Design".',
     techs: ["HTML5", "CSS3"],
@@ -84,7 +84,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://replit.com/@prulec/Palindrome-Checker#index.js",
-    repo: "",
+    code: "",
     description:
       'Javascript challenge for freeCodeCamp\'s course "JavaScript Algorithms and Data Structures".',
     techs: ["Javascript"],
@@ -97,7 +97,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://replit.com/@prulec/Roman-Numeral-Converter#index.js",
-    repo: "",
+    code: "",
     description:
       'Javascript challenge for freeCodeCamp\'s course "JavaScript Algorithms and Data Structures".',
     techs: ["Javascript"],
@@ -110,7 +110,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://replit.com/@prulec/Caesars-Cipher#index.js",
-    repo: "",
+    code: "",
     description:
       'Javascript challenge for freeCodeCamp\'s course "JavaScript Algorithms and Data Structures".',
     techs: ["Javascript"],
@@ -123,7 +123,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://replit.com/@prulec/Telephone-Number-Validator#index.js",
-    repo: "",
+    code: "",
     description:
       'Javascript challenge for freeCodeCamp\'s course "JavaScript Algorithms and Data Structures".',
     techs: ["Javascript"],
@@ -138,7 +138,7 @@ export const PROJECTS = [
     ],
     date: "2021",
     url: "https://replit.com/@prulec/Cash-Register#index.js",
-    repo: "",
+    code: "",
     description:
       'Javascript challenge for freeCodeCamp\'s course "JavaScript Algorithms and Data Structures".',
     techs: ["Javascript"],
@@ -153,7 +153,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://codepen.io/prulec/full/RwQmjdJ",
-    repo: "",
+    code: "",
     description:
       'Random Quote Page challenge for freeCodeCamp\'s course "Front End Development Libraries".',
     techs: ["HTML5", "CSS3", "Bootstrap", "Sass", "Javascript", "jQuery"],
@@ -166,7 +166,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://codepen.io/prulec/full/bGvbZOY",
-    repo: "",
+    code: "",
     description:
       'Simple Markdown Previewer challenge for freeCodeCamp\'s course "Front End Development Libraries".',
     techs: ["HTML5", "CSS3", "Sass", "Javascript", "React"],
@@ -179,7 +179,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://codepen.io/prulec/full/WNzNBjV",
-    repo: "",
+    code: "",
     description:
       'Simple Drum Machine App challenge for freeCodeCamp\'s course "Front End Development Libraries".',
     techs: ["HTML5", "CSS3", "Sass", "Javascript", "React"],
@@ -192,7 +192,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://codepen.io/prulec/full/mdxJpvW",
-    repo: "",
+    code: "",
     description:
       'Javascript Calculator App challenge for freeCodeCamp\'s course "Front End Development Libraries".',
     techs: ["HTML5", "CSS3", "Sass", "Javascript", "React"],
@@ -205,7 +205,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://codepen.io/prulec/full/RwMWXOr",
-    repo: "",
+    code: "",
     description:
       'Pomodoro Timer App challenge for freeCodeCamp\'s course "Front End Development Libraries".',
     techs: ["HTML5", "CSS3", "Sass", "Javascript", "React"],
@@ -218,7 +218,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://replit.com/@prulec/d3-barchart#index.html",
-    repo: "",
+    code: "",
     description:
       'Bar Chart Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -231,7 +231,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://replit.com/@prulec/d3-scatterplot#index.html",
-    repo: "",
+    code: "",
     description:
       'Scatterplot Graph challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -244,7 +244,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://replit.com/@prulec/d3-heatmap#index.html",
-    repo: "",
+    code: "",
     description:
       'Heat Map Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -257,7 +257,7 @@ export const PROJECTS = [
     ],
     date: "2022",
     url: "https://replit.com/@prulec/d3-choroplethmap#index.html",
-    repo: "",
+    code: "",
     description:
       'Choropleth Map Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
@@ -269,10 +269,75 @@ export const PROJECTS = [
       "assets/screenshots/TreeMap.png",
     ],
     date: "2022",
-    url: "https://replit.com/@prulec/d3-treemap#index.html",
-    repo: "",
+    url: "https://d3-treemap.prulec.repl.co/",
+    code: "https://replit.com/@prulec/d3-treemap#index.html",
     description:
       'Treemap Diagram Visualization challenge for freeCodeCamp\'s course "Data Visualization".',
     techs: ["HTML5", "CSS3", "Javascript", "D3"],
+  },
+  {
+    position: 20,
+    name: "Timestamp Microservice",
+    images: [
+      "assets/screenshots/Timestamp.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-timestamp.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-timestamp#index.js",
+    description:
+      'Timestamp Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
+    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+  },
+  {
+    position: 21,
+    name: "Request Header Parser Microservice",
+    images: [
+      "assets/screenshots/RequestHeaderParser.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-headerparser.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-headerparser#index.js",
+    description:
+      'Request Header Parser Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
+    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+  },
+  {
+    position: 22,
+    name: "URL Shortener Microservice",
+    images: [
+      "assets/screenshots/UrlShortener.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-urlshortener.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-urlshortener#index.js",
+    description:
+      'URL Shortener Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
+    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+  },
+  {
+    position: 23,
+    name: "Exercise Tracker Microservice",
+    images: [
+      "assets/screenshots/ExerciseTracker.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-exercisetracker.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-exercisetracker#index.js",
+    description:
+      'Exercise Tracker Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
+    techs: ["HTML5", "CSS3", "Javascript", "Express"],
+  },
+  {
+    position: 24,
+    name: "File Metadata Microservice",
+    images: [
+      "assets/screenshots/FileMetadata.png",
+    ],
+    date: "2022",
+    url: "https://boilerplate-project-filemetadata.prulec.repl.co/",
+    code: "https://replit.com/@prulec/boilerplate-project-filemetadata#index.js",
+    description:
+      'File Metadata Microservice challenge for freeCodeCamp\'s course "Back End Development and APIs".',
+    techs: ["HTML5", "CSS3", "Javascript", "Express"],
   },
 ];

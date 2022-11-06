@@ -2,7 +2,7 @@ export const ABOUT = {
     image: "assets/png/profile_image_dolltoon.png",
     name: "Pablo Rule Calvi",
     title: "Web Developer",
-    cv: "https://drive.google.com/file/d/1K0z3YZBlLJVZA53fJ_9BtboJxIO-RgTE/view?usp=sharing",
+    cv: "https://drive.google.com/file/d/1pC7QT9sjih8XGEc7tzUxPBqX86Wno6LZ/view?usp=sharing",
     description: "I'm a fan of technologies and I love solving problems through software implementation. \nMost of time I'm an analytical and methodical human being, and I'm looking for learning new things and collaborate with people working on new and interesting projects. \nIf you would like to make a comment or contacting me, please click bellow on 'contact'. ",
     socials: [
         {
