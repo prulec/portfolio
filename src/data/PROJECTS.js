@@ -407,4 +407,80 @@ export const PROJECTS = [
       'American-British English Translator API challenge for freeCodeCamp\'s course "Quality Assurance". \nIncludes Unit and Functional Tests.',
     techs: ["HTML5", "CSS3", "Javascript", "Express", "Nodejs", "Mocha", "Chai"],
   },
+  {
+    position: 30,
+    name: "Arithmetic Formatter",
+    images: [
+      "assets/screenshots/ArithmeticFormatter1.png",
+      "assets/screenshots/ArithmeticFormatter2.png",
+      "assets/screenshots/ArithmeticFormatter3.png",
+    ],
+    date: "2022",
+    url: "https://replit.com/@prulec/boilerplate-arithmetic-formatter#main.py",
+    code: "https://replit.com/@prulec/boilerplate-arithmetic-formatter#arithmetic_arranger.py",
+    description:
+      'Arithmetic Formatter challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
+    techs: ["Python"],
+  },
+  {
+    position: 31,
+    name: "Time Calculator",
+    images: [
+      "assets/screenshots/TimeCalculator1.png",
+      "assets/screenshots/TimeCalculator2.png",
+    ],
+    date: "2022",
+    url: "https://replit.com/@prulec/boilerplate-time-calculator#main.py",
+    code: "https://replit.com/@prulec/boilerplate-time-calculator#time_calculator.py",
+    description:
+      'Time Calculator challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
+    techs: ["Python"],
+  },
+  {
+    position: 32,
+    name: "Budget App",
+    images: [
+      "assets/screenshots/BudgetApp1.png",
+      "assets/screenshots/BudgetApp2.png",
+      "assets/screenshots/BudgetApp3.png",
+      "assets/screenshots/BudgetApp4.png",
+    ],
+    date: "2022",
+    url: "https://replit.com/@prulec/boilerplate-budget-app#main.py",
+    code: "https://replit.com/@prulec/boilerplate-budget-app#test_module.py",
+    description:
+      'Budget App challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
+    techs: ["Python"],
+  },
+  {
+    position: 33,
+    name: "Polygon Area Calculator",
+    images: [
+      "assets/screenshots/PolygonAreaCalculator1.png",
+      "assets/screenshots/PolygonAreaCalculator2.png",
+      "assets/screenshots/PolygonAreaCalculator3.png",
+      "assets/screenshots/PolygonAreaCalculator4.png",
+    ],
+    date: "2022",
+    url: "https://replit.com/@prulec/boilerplate-polygon-area-calculator#main.py",
+    code: "https://replit.com/@prulec/boilerplate-polygon-area-calculator#shape_calculator.py",
+    description:
+      'Polygon Area Calculator challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
+    techs: ["Python"],
+  },
+  {
+    position: 34,
+    name: "Probability Calculator",
+    images: [
+      "assets/screenshots/ProbabilityCalculator1.png",
+      "assets/screenshots/ProbabilityCalculator2.png",
+      "assets/screenshots/ProbabilityCalculator3.png",
+    ],
+    date: "2022",
+    url: "https://replit.com/@prulec/boilerplate-probability-calculator#main.py",
+    code: "https://replit.com/@prulec/boilerplate-probability-calculator#prob_calculator.py",
+    description:
+      'Probability Calculator challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
+    techs: ["Python"],
+  },
 ];
