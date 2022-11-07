@@ -14,7 +14,7 @@ export default function ProjectThumb(props) {
       className={"projectThumb" + (props.isSelected ? " select" : " deselect")}
       onMouseOver={doHover}
       onClick={props.select}
-        style={{ order: props.project.position }}
+      style={{ order: -props.project.position }}
     >
       <img src={props.project.images[0]} alt={props.project.images[0]} />
       {isHover && (

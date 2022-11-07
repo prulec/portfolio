@@ -483,4 +483,17 @@ export const PROJECTS = [
       'Probability Calculator challenge for freeCodeCamp\'s course "Scientific Computing with Python".',
     techs: ["Python"],
   },
+  {
+    position: 35,
+    name: "Tenzies Game",
+    images: [
+      "assets/screenshots/TenziesGame.png",
+    ],
+    date: "2022",
+    url: "https://tenzies-game.prulec.repl.co/",
+    code: "https://replit.com/@prulec/Tenzies-game#src/App.jsx",
+    description:
+      'Tenzies Game example for Scrimba\'s course "Learn React for free".',
+    techs: ["HTML5", "CSS3", "Javascript", "React"],
+  },
 ];
