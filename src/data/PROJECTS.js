@@ -496,4 +496,22 @@ export const PROJECTS = [
       'Tenzies Game example for Scrimba\'s course "Learn React for free".',
     techs: ["HTML5", "CSS3", "Javascript", "React"],
   },
+  {
+    position: 36,
+    name: "Portfolio Full-stack",
+    images: [
+      "assets/screenshots/PortfolioFullstack1.png",
+      "assets/screenshots/PortfolioFullstack2.png",
+      "assets/screenshots/PortfolioFullstack3.png",
+      "assets/screenshots/PortfolioFullstack4.png",
+      "assets/screenshots/PortfolioFullstack5.png",
+      "assets/screenshots/PortfolioFullstack6.png",
+    ],
+    date: "2022",
+    url: "https://arg-portfolio.web.app/prulec.dev",
+    code: "https://github.com/prulec/portfolio-ap/tree/backend",
+    description:
+      'Portfolio Fullstack developed as final project for Argentina Programa\'s course "#YoProgramo". \nIt has the front-end developed with Angular (Typescript), The back-end with Spring Boot (Java), and data bases with MySQL. \nIt features too: JWT Authentication and Email contact services on the back-end, and Drag-and-drop capabilities on the front-end side.',
+    techs: ["HTML5", "CSS3", "Bootstrap", "TypeScript", "Angular", "Java", "SpringBoot", "MySQL", "Docker"],
+  },
 ];
