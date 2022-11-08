@@ -498,7 +498,7 @@ export const PROJECTS = [
   },
   {
     position: 36,
-    name: "Portfolio Full-stack",
+    name: "Full-stack Portfolio Website",
     images: [
       "assets/screenshots/PortfolioFullstack1.png",
       "assets/screenshots/PortfolioFullstack2.png",
@@ -511,7 +511,22 @@ export const PROJECTS = [
     url: "https://arg-portfolio.web.app/prulec.dev",
     code: "https://github.com/prulec/portfolio-ap/tree/backend",
     description:
-      'Portfolio Fullstack developed as final project for Argentina Programa\'s course "#YoProgramo". \nIt has the front-end developed with Angular (Typescript), The back-end with Spring Boot (Java), and data bases with MySQL. \nIt features too: JWT Authentication and Email contact services on the back-end, and Drag-and-drop capabilities on the front-end side.',
+      'Fullstack Portfolio Website developed as final project for Argentina Programa\'s course "#YoProgramo". \nIt has the front-end developed with Angular (Typescript), The back-end with Spring Boot (Java), and data bases with MySQL. \nIt features too: JWT Authentication and Email contact services on the back-end, and Drag-and-drop capabilities on the front-end side.',
     techs: ["HTML5", "CSS3", "Bootstrap", "TypeScript", "Angular", "Java", "SpringBoot", "MySQL", "Docker"],
+  },
+  {
+    position: 37,
+    name: "Portfolio Webapp",
+    images: [
+      "assets/screenshots/PortfolioReact1.png",
+      "assets/screenshots/PortfolioReact2.png",
+      "assets/screenshots/PortfolioReact3.png",
+    ],
+    date: "2022",
+    url: "https://prulec.github.io/portfolio",
+    code: "https://github.com/prulec/portfolio",
+    description:
+      'Portfolio Webapp developed with React.',
+    techs: ["HTML5", "CSS3", "Javascript", "React", "MaterialUI" ],
   },
 ];
