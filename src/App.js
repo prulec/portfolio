@@ -71,24 +71,24 @@ export default function App() {
 
   return (
     <div className="container">
-      {(showFullPage || display===CONSTANTS.START) &&
-        <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
-      }
-      {(showFullPage || display===CONSTANTS.START) &&
-        <Projects
-        projects={PROJECTS}
-        filter={projectsFilter}
-        select={selectProject}
-        display={displayProject}
-      />
-      }
-      {(showFullPage || display!==CONSTANTS.START) &&
+      {(showFullPage || display === CONSTANTS.START) && (
+        <div className="mainSelector">
+          <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
+          <Projects
+            projects={PROJECTS}
+            filter={projectsFilter}
+            select={selectProject}
+            display={displayProject}
+          />
+        </div>
+      )}
+      {(showFullPage || display !== CONSTANTS.START) &&
         <Display
-        show={display}
-        project={projectDisplayed}
-        about={ABOUT}
-        techs={TECHS}
-      />
+          show={display}
+          project={projectDisplayed}
+          about={ABOUT}
+          techs={TECHS}
+        />
       }
       <Navbar display={display} open={displayFromNavbar} about={ABOUT} />
     </div>
