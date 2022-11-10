@@ -9,6 +9,7 @@ import Techbar from "./components/Techbar";
 import Projects from "./components/Projects";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
+import MosaicPanel from "./components/MosaicPanel";
 import { useMediaQuery } from "@mui/material";
 
 const getNames = (array) => {
@@ -73,13 +74,14 @@ export default function App() {
     <div className="container">
       {(showFullPage || display === CONSTANTS.START) && (
         <div className="mainSelector">
-          <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
+          <MosaicPanel projects={PROJECTS} techs={TECHS}/>
+          {/* <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
           <Projects
             projects={PROJECTS}
             filter={projectsFilter}
             select={selectProject}
             display={displayProject}
-          />
+          /> */}
         </div>
       )}
       {(showFullPage || display !== CONSTANTS.START) &&
