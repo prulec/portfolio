@@ -11,9 +11,30 @@ import Display from "./components/Display";
 import Navbar from "./components/Navbar";
 import MosaicPanel from "./components/MosaicPanel";
 import { useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
 
 const getNames = (array) => {
   return array.map((i) => i.name);
+};
+
+// useWindowSize Hook
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowSize;
 };
 
 export default function App() {
@@ -23,7 +44,8 @@ export default function App() {
   const [projectSelected, setProjectSelected] = useState();
   const [projectDisplayed, setProjectDisplayed] = useState();
   const [display, setDisplay] = useState(CONSTANTS.START);
-  const showFullPage = useMediaQuery('(min-width: 750px)')
+  const showFullPage = useMediaQuery("(min-width: 750px)");
+  const windowSize = useWindowSize();
 
   const selectTech = (event, techName) => {
     if (techName !== techSelected) {
@@ -74,7 +96,12 @@ export default function App() {
     <div className="container">
       {(showFullPage || display === CONSTANTS.START) && (
         <div className="mainSelector">
-          <MosaicPanel projects={PROJECTS} techs={TECHS}/>
+          <MosaicPanel
+            projects={PROJECTS}
+            techs={TECHS}
+            windowSize={windowSize}
+            showFullPage={showFullPage}
+          />
           {/* <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
           <Projects
             projects={PROJECTS}
@@ -84,14 +111,14 @@ export default function App() {
           /> */}
         </div>
       )}
-      {(showFullPage || display !== CONSTANTS.START) &&
+      {(showFullPage || display !== CONSTANTS.START) && (
         <Display
           show={display}
           project={projectDisplayed}
           about={ABOUT}
           techs={TECHS}
         />
-      }
+      )}
       <Navbar display={display} open={displayFromNavbar} about={ABOUT} />
     </div>
   );

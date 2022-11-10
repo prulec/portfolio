@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { ImageList, ImageListItem } from "@mui/material";
 
 import "./MosaicPanel.css";
@@ -6,15 +8,24 @@ import "./MosaicPanel.css";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
 
-const totalHeight = 600
-const totalWidth = 200
-const totalColumns = 6
-
 export default function MosaicPanel(props) {
+  const [mosaicSize, setMosaicSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    setMosaicSize({
+      width: props.windowSize.width * (props.showFullPage ? 0.45 : 1),
+    });
+  }, [props.windowSize]);
+
   let imagesData = props.projects.map((project) => ({
     img: project.images[0],
     title: project.name,
@@ -22,9 +33,14 @@ export default function MosaicPanel(props) {
     cols: project.size === 0 ? 1 : 2,
     position: project.position,
   }));
-  let horizontal = imagesData.reduce((acc,cur) => acc += cur.cols + 2 * (cur.rows - 1), 0)
-  let totalRows = Math.trunc(horizontal / totalColumns) + (horizontal%totalColumns ? 1 : 0)
-  let rowHeight = (totalWidth/totalColumns) < (totalHeight/totalRows) ? totalWidth/totalColumns : totalHeight/totalRows
+
+  let totalColumns = 5;
+  let totalWidth = mosaicSize.width;
+  // let totalHeight = mosaicSize.height
+  // let horizontal = imagesData.reduce((acc,cur) => acc += cur.cols + 2 * (cur.rows - 1), 0)
+  // let totalRows = Math.ceil(horizontal/totalColumns)
+  // let rowHeight = Math.min(totalWidth/totalColumns, totalHeight/totalRows)
+  let rowHeight = totalWidth / totalColumns;
 
   return (
     <div className="mosaicPanel">
@@ -33,6 +49,7 @@ export default function MosaicPanel(props) {
         variant="quilted"
         cols={totalColumns}
         rowHeight={rowHeight}
+        gap={2}
       >
         {imagesData.map((item) => (
           <ImageListItem
