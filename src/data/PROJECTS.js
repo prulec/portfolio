@@ -7,6 +7,7 @@ export const PROJECTS = [
       "assets/screenshots/survey2.png",
       "assets/screenshots/survey3.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://codepen.io/prulec/full/RwVMZpE",
     code: "",
@@ -22,6 +23,7 @@ export const PROJECTS = [
       "assets/screenshots/tribute2.png",
       "assets/screenshots/tribute3.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://codepen.io/prulec/full/ExmmJog",
     code: "",
@@ -37,6 +39,7 @@ export const PROJECTS = [
       "assets/screenshots/techdoc2.png",
       "assets/screenshots/techdoc3.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://codepen.io/prulec/full/QWgwjJE",
     code: "",
@@ -54,6 +57,7 @@ export const PROJECTS = [
       "assets/screenshots/mates4.png",
       "assets/screenshots/mates5.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://codepen.io/prulec/full/rNmqOQr",
     code: "",
@@ -69,6 +73,7 @@ export const PROJECTS = [
       "assets/screenshots/fccportfolio2.png",
       "assets/screenshots/fccportfolio3.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://codepen.io/prulec/full/LYLpQOP",
     code: "",
@@ -82,6 +87,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/PalindromeChecker.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://replit.com/@prulec/Palindrome-Checker#index.js",
     code: "",
@@ -95,6 +101,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/RomanNumeralConverter.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://replit.com/@prulec/Roman-Numeral-Converter#index.js",
     code: "",
@@ -108,6 +115,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/CaesarsCipher.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://replit.com/@prulec/Caesars-Cipher#index.js",
     code: "",
@@ -121,6 +129,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/TelephoneNumberValidator.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://replit.com/@prulec/Telephone-Number-Validator#index.js",
     code: "",
@@ -136,6 +145,7 @@ export const PROJECTS = [
       "assets/screenshots/CashRegister2.png",
       "assets/screenshots/CashRegister3.png",
     ],
+    size: 0,
     date: "2021",
     url: "https://replit.com/@prulec/Cash-Register#index.js",
     code: "",
@@ -151,6 +161,7 @@ export const PROJECTS = [
       "assets/screenshots/RandomQuoteMachine2.png",
       "assets/screenshots/RandomQuoteMachine3.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://codepen.io/prulec/full/RwQmjdJ",
     code: "",
@@ -164,6 +175,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/MarkdownPreviewer.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://codepen.io/prulec/full/bGvbZOY",
     code: "",
@@ -177,6 +189,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/DrumMachine.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://codepen.io/prulec/full/WNzNBjV",
     code: "",
@@ -190,6 +203,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/JavascriptCalculator.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://codepen.io/prulec/full/mdxJpvW",
     code: "",
@@ -203,6 +217,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/PomodoroTimer.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://codepen.io/prulec/full/RwMWXOr",
     code: "",
@@ -216,6 +231,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/BarChart.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://d3-barchart.prulec.repl.co/",
     code: "https://replit.com/@prulec/d3-barchart#script.js",
@@ -229,6 +245,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/ScatterPlot.png",
     ],
+    size: 1,
     date: "2022",
     url: "https://d3-scatterplot.prulec.repl.co/",
     code: "https://replit.com/@prulec/d3-scatterplot#script.js",
@@ -242,6 +259,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/HeatMap.png",
     ],
+    size: 1,
     date: "2022",
     url: "https://d3-heatmap.prulec.repl.co/",
     code: "https://replit.com/@prulec/d3-heatmap#script.js",
@@ -255,6 +273,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/ChoroplethMap.png",
     ],
+    size: 1,
     date: "2022",
     url: "https://d3-choroplethmap.prulec.repl.co/",
     code: "https://replit.com/@prulec/d3-choroplethmap#script.js",
@@ -268,6 +287,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/TreeMap.png",
     ],
+    size: 1,
     date: "2022",
     url: "https://d3-treemap.prulec.repl.co/",
     code: "https://replit.com/@prulec/d3-treemap#script.js",
@@ -281,6 +301,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/Timestamp.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-timestamp.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-timestamp#index.js",
@@ -294,6 +315,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/RequestHeaderParser.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-headerparser.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-headerparser#index.js",
@@ -307,6 +329,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/UrlShortener.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-urlshortener.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-urlshortener#index.js",
@@ -320,6 +343,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/ExerciseTracker.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-exercisetracker.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-exercisetracker#index.js",
@@ -333,6 +357,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/FileMetadata.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-filemetadata.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-filemetadata#index.js",
@@ -346,6 +371,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/MetricImperialConverter.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-metricimpconverter.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-metricimpconverter#tests/1_unit-tests.js",
@@ -360,6 +386,7 @@ export const PROJECTS = [
       "assets/screenshots/IssueTracker1.png",
       "assets/screenshots/IssueTracker2.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-issuetracker.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-issuetracker#tests/2_functional-tests.js",
@@ -374,6 +401,7 @@ export const PROJECTS = [
       "assets/screenshots/PersonalLibrary1.png",
       "assets/screenshots/PersonalLibrary2.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-library.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-library#tests/2_functional-tests.js",
@@ -387,6 +415,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/SudokuSolver.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-sudoku-solver.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-sudoku-solver#tests/1_unit-tests.js",
@@ -400,6 +429,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/AmericanBritishEnglishTranslator.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://boilerplate-project-american-british-english-translator.prulec.repl.co/",
     code: "https://replit.com/@prulec/boilerplate-project-american-british-english-translator#tests/1_unit-tests.js",
@@ -415,6 +445,7 @@ export const PROJECTS = [
       "assets/screenshots/ArithmeticFormatter2.png",
       "assets/screenshots/ArithmeticFormatter3.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://replit.com/@prulec/boilerplate-arithmetic-formatter#main.py",
     code: "https://replit.com/@prulec/boilerplate-arithmetic-formatter#arithmetic_arranger.py",
@@ -429,6 +460,7 @@ export const PROJECTS = [
       "assets/screenshots/TimeCalculator1.png",
       "assets/screenshots/TimeCalculator2.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://replit.com/@prulec/boilerplate-time-calculator#main.py",
     code: "https://replit.com/@prulec/boilerplate-time-calculator#time_calculator.py",
@@ -445,6 +477,7 @@ export const PROJECTS = [
       "assets/screenshots/BudgetApp3.png",
       "assets/screenshots/BudgetApp4.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://replit.com/@prulec/boilerplate-budget-app#main.py",
     code: "https://replit.com/@prulec/boilerplate-budget-app#test_module.py",
@@ -461,6 +494,7 @@ export const PROJECTS = [
       "assets/screenshots/PolygonAreaCalculator3.png",
       "assets/screenshots/PolygonAreaCalculator4.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://replit.com/@prulec/boilerplate-polygon-area-calculator#main.py",
     code: "https://replit.com/@prulec/boilerplate-polygon-area-calculator#shape_calculator.py",
@@ -476,6 +510,7 @@ export const PROJECTS = [
       "assets/screenshots/ProbabilityCalculator2.png",
       "assets/screenshots/ProbabilityCalculator3.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://replit.com/@prulec/boilerplate-probability-calculator#main.py",
     code: "https://replit.com/@prulec/boilerplate-probability-calculator#prob_calculator.py",
@@ -489,6 +524,7 @@ export const PROJECTS = [
     images: [
       "assets/screenshots/TenziesGame.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://tenzies-game.prulec.repl.co/",
     code: "https://replit.com/@prulec/Tenzies-game#src/App.jsx",
@@ -507,6 +543,7 @@ export const PROJECTS = [
       "assets/screenshots/PortfolioFullstack5.png",
       "assets/screenshots/PortfolioFullstack6.png",
     ],
+    size: 2,
     date: "2022",
     url: "https://arg-portfolio.web.app/prulec.dev",
     code: "https://github.com/prulec/portfolio-ap/tree/backend",
@@ -522,6 +559,7 @@ export const PROJECTS = [
       "assets/screenshots/PortfolioReact2.png",
       "assets/screenshots/PortfolioReact3.png",
     ],
+    size: 0,
     date: "2022",
     url: "https://prulec.github.io/portfolio",
     code: "https://github.com/prulec/portfolio",

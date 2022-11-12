@@ -7,3 +7,13 @@
     display: flex;
     background-color: #d4d4d4;
 }
+
+.container>.mainSelector {
+    flex: 1 0 45%;
+    display: flex;
+    overflow: auto;
+}
+
+.mosaic {
+    flex-direction: column;
+}

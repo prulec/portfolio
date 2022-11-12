@@ -9,10 +9,36 @@ import Techbar from "./components/Techbar";
 import Projects from "./components/Projects";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
+import MosaicPanel from "./components/MosaicPanel";
 import { useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
+
+//------MOSAIC LAYOUT ------
+const useMosaic = true;
+//--------------------------
 
 const getNames = (array) => {
   return array.map((i) => i.name);
+};
+
+// useWindowSize Hook
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowSize;
 };
 
 export default function App() {
@@ -22,7 +48,8 @@ export default function App() {
   const [projectSelected, setProjectSelected] = useState();
   const [projectDisplayed, setProjectDisplayed] = useState();
   const [display, setDisplay] = useState(CONSTANTS.START);
-  const showFullPage = useMediaQuery('(min-width: 750px)')
+  const showFullPage = useMediaQuery("(min-width: 750px)");
+  const windowSize = useWindowSize();
 
   const selectTech = (event, techName) => {
     if (techName !== techSelected) {
@@ -71,25 +98,42 @@ export default function App() {
 
   return (
     <div className="container">
-      {(showFullPage || display===CONSTANTS.START) &&
-        <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
-      }
-      {(showFullPage || display===CONSTANTS.START) &&
-        <Projects
-        projects={PROJECTS}
-        filter={projectsFilter}
-        select={selectProject}
-        display={displayProject}
-      />
-      }
-      {(showFullPage || display!==CONSTANTS.START) &&
+      {(showFullPage || display === CONSTANTS.START) && (
+        <div className={"mainSelector" + (useMosaic ? " mosaic" : "")}>
+          {useMosaic ? (
+            <MosaicPanel
+              projects={PROJECTS}
+              projectsFilter={projectsFilter}
+              selectProject={selectProject}
+              projectSelected={projectSelected}
+              displayProject={displayProject}
+              techs={TECHS}
+              techsFilter={techsFilter}
+              selectTech={selectTech}
+              windowSize={windowSize}
+              showFullPage={showFullPage}
+            />
+          ) : (
+            <>
+              <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
+              <Projects
+                projects={PROJECTS}
+                filter={projectsFilter}
+                select={selectProject}
+                display={displayProject}
+              />
+            </>
+          )}
+        </div>
+      )}
+      {(showFullPage || display !== CONSTANTS.START) && (
         <Display
-        show={display}
-        project={projectDisplayed}
-        about={ABOUT}
-        techs={TECHS}
-      />
-      }
+          show={display}
+          project={projectDisplayed}
+          about={ABOUT}
+          techs={TECHS}
+        />
+      )}
       <Navbar display={display} open={displayFromNavbar} about={ABOUT} />
     </div>
   );

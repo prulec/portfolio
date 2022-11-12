@@ -11,6 +11,7 @@ export default function Techbar(props) {
           tech={tech}
           isSelected={props.filter.includes(tech.name)}
           select={(event) => props.select(event, tech.name)}
+          vertical={true}
         />
       ))}
       {/* <Tech tech={{ name: "Add", filename: "add.svg" }} /> */}

@@ -1,18 +1,20 @@
 .navbar {
     position: fixed;
+    z-index: 20;
     bottom: 0;
     right: 1.5rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     display: flex;
-    background-color: #d6efffd9;
+    background-color: rgba(214, 239, 255, 1);
 }
 
 .start {
-    opacity: 70%;
+    opacity: 90%;
 }
 
-.navbar--main, .navbar--extra {
+.navbar--main,
+.navbar--extra {
     display: flex;
     align-items: center;
     padding-top: 0.75rem;
@@ -22,6 +24,7 @@
 }
 
 .navbar--main {
+    position: relative;
     padding-right: 1rem;
     padding-left: 0.7rem;
     column-gap: 0.5rem;
@@ -35,17 +38,33 @@
     column-gap: 2rem;
 }
 
-.navbar--extra>a, .navbar--extra>span, .navbar--main>span {
+.navbar--extra>a,
+.navbar--extra>span,
+.navbar--main>span {
     cursor: pointer;
     text-decoration: none;
     color: black;
 }
 
-.closeButton, .arrow {
+.closeButton,
+.arrow {
     max-height: 1.3rem;
     cursor: pointer;
 }
 
 .closeButton {
     margin-right: 0.5rem;
+    z-index: 30;
+}
+
+.closeBackground {
+    background: #FF6F6F;
+    opacity: 0.8;
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-top-left-radius: 1rem;
+    cursor: pointer;
 }

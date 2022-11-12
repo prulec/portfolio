@@ -21,10 +21,16 @@ export default function Navbar(props) {
       )}
       <div className="navbar--main">
         {props.display !== CONSTANTS.START && (
-          <CloseRounded
-            className="closeButton"
-            onClick={(event) => props.open(event, CONSTANTS.START)}
-          />
+          <>
+            <div
+              className="closeBackground"
+              onClick={(event) => props.open(event, CONSTANTS.START)}
+            />
+            <CloseRounded
+              className="closeButton"
+              onClick={(event) => props.open(event, CONSTANTS.START)}
+            />
+          </>
         )}
         <KeyboardDoubleArrowUp
           className="arrow"
