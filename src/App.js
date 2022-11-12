@@ -13,6 +13,10 @@ import MosaicPanel from "./components/MosaicPanel";
 import { useMediaQuery } from "@mui/material";
 import { useEffect } from "react";
 
+//------MOSAIC LAYOUT ------
+const useMosaic = true;
+//--------------------------
+
 const getNames = (array) => {
   return array.map((i) => i.name);
 };
@@ -20,8 +24,8 @@ const getNames = (array) => {
 // useWindowSize Hook
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
+    width: window.innerWidth,
+    height: window.innerHeight,
   });
   useEffect(() => {
     const handleResize = () => {
@@ -30,8 +34,8 @@ const useWindowSize = () => {
         height: window.innerHeight,
       });
     };
-    window.addEventListener("resize", handleResize);
     handleResize();
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return windowSize;
@@ -95,26 +99,31 @@ export default function App() {
   return (
     <div className="container">
       {(showFullPage || display === CONSTANTS.START) && (
-        <div className="mainSelector">
-          <MosaicPanel
-            projects={PROJECTS}
-            projectsFilter={projectsFilter}
-            selectProject={selectProject}
-            projectSelected={projectSelected}
-            displayProject={displayProject}
-            techs={TECHS}
-            techsFilter={techsFilter}
-            selectTech={selectTech}
-            windowSize={windowSize}
-            showFullPage={showFullPage}
-          />
-          {/* <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
-          <Projects
-            projects={PROJECTS}
-            filter={projectsFilter}
-            select={selectProject}
-            display={displayProject}
-          /> */}
+        <div className={"mainSelector" + (useMosaic ? " mosaic" : "")}>
+          {useMosaic ? (
+            <MosaicPanel
+              projects={PROJECTS}
+              projectsFilter={projectsFilter}
+              selectProject={selectProject}
+              projectSelected={projectSelected}
+              displayProject={displayProject}
+              techs={TECHS}
+              techsFilter={techsFilter}
+              selectTech={selectTech}
+              windowSize={windowSize}
+              showFullPage={showFullPage}
+            />
+          ) : (
+            <>
+              <Techbar techs={TECHS} filter={techsFilter} select={selectTech} />
+              <Projects
+                projects={PROJECTS}
+                filter={projectsFilter}
+                select={selectProject}
+                display={displayProject}
+              />
+            </>
+          )}
         </div>
       )}
       {(showFullPage || display !== CONSTANTS.START) && (
