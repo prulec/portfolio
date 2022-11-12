@@ -98,7 +98,13 @@ export default function App() {
         <div className="mainSelector">
           <MosaicPanel
             projects={PROJECTS}
+            projectsFilter={projectsFilter}
+            selectProject={selectProject}
+            projectSelected={projectSelected}
+            displayProject={displayProject}
             techs={TECHS}
+            techsFilter={techsFilter}
+            selectTech={selectTech}
             windowSize={windowSize}
             showFullPage={showFullPage}
           />

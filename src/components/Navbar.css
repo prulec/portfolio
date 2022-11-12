@@ -1,15 +1,16 @@
 .navbar {
     position: fixed;
+    z-index: 20;
     bottom: 0;
     right: 1.5rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     display: flex;
-    background-color: #d6efffd9;
+    background-color: rgba(214, 239, 255, 1);
 }
 
 .start {
-    opacity: 70%;
+    opacity: 90%;
 }
 
 .navbar--main, .navbar--extra {

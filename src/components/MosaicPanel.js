@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ImageList, ImageListItem } from "@mui/material";
 
 import "./MosaicPanel.css";
+import Tech from "./Tech";
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -17,7 +18,6 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function MosaicPanel(props) {
   const [mosaicSize, setMosaicSize] = useState({
     width: undefined,
-    height: undefined,
   });
 
   useEffect(() => {
@@ -35,31 +35,73 @@ export default function MosaicPanel(props) {
   }));
 
   let totalColumns = 5;
-  let totalWidth = mosaicSize.width;
-  // let totalHeight = mosaicSize.height
-  // let horizontal = imagesData.reduce((acc,cur) => acc += cur.cols + 2 * (cur.rows - 1), 0)
-  // let totalRows = Math.ceil(horizontal/totalColumns)
-  // let rowHeight = Math.min(totalWidth/totalColumns, totalHeight/totalRows)
+  let gap = 1;
+  let padding = 2 * 0.2 * 16;
+  let totalWidth = mosaicSize.width - padding - gap * (totalColumns - 1);
   let rowHeight = totalWidth / totalColumns;
+
+  let titleFontSize = Math.min(32, mosaicSize.width * 0.07)
 
   return (
     <div className="mosaicPanel">
+      <div className="mosaicPanel--header">
+        <div className="mosaicPanel--header--title">
+          <h1 style={{ fontSize: titleFontSize }}>{props.projectSelected || "Projects"}</h1>
+          {props.projectSelected && (
+            <img
+              src="assets/svg/show-project.svg"
+              alt="display-icon"
+              onClick={(event) => {
+                event.stopPropagation();
+                props.displayProject(event, props.projectSelected);
+              }}
+            />
+          )}
+        </div>
+        <div className="mosaicPanel--header--techs">
+          <h2>Techs</h2>
+          <ul>
+            {props.techs.map((tech) => (
+              <li>
+                <Tech
+                  tech={tech}
+                  isSelected={props.techsFilter.includes(tech.name)}
+                  select={(event) => props.selectTech(event, tech.name)}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <ImageList
-        sx={{ width: "100%", margin: 0 }}
+        sx={{
+          width: "auto",
+          margin: 0,
+          padding: "0 5px 1px 5px",
+        }}
         variant="quilted"
         cols={totalColumns}
         rowHeight={rowHeight}
-        gap={2}
+        gap={gap}
       >
         {imagesData.map((item) => (
           <ImageListItem
             key={item.img}
             cols={item.cols || 1}
             rows={item.rows || 1}
-            style={{ order: -item.position }}
+            style={{
+              order: -item.position,
+              outline: "solid 1px #8B8B8B",
+            }}
+            onClick={(event) => props.selectProject(event, item.title)}
+            className={
+              props.projectsFilter.includes(item.title)
+                ? "selectProject"
+                : "deselectProject"
+            }
           >
             <img
-              {...srcset(item.img, 60, item.rows, item.cols)}
+              {...srcset(item.img, 0, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
             />
